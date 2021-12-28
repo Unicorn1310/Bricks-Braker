@@ -1,0 +1,79 @@
+﻿<Page
+    x:Class="FinalProject.TheGame"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White">
+
+    <Grid KeyDown="Canvas_KeyDown">
+        <Canvas >
+            <StackPanel Orientation="Vertical" Name="sp">
+
+                <!--<StackPanel Orientation="Horizontal">
+                    <Rectangle Name="re1" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re2" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re3" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re4" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re5" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re6" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re7" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re8" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re9" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re10" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Name="re11" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re12" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re13" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re14" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re15" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re16" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re17" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re18" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re19" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re20" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Name="re21" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re22" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re23" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re24" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re25" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re26" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re27" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re28" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re29" Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Name="re30" Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                </StackPanel>
+                -->
+                <!--<StackPanel Orientation="Horizontal">
+                    <Rectangle Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Fill="AliceBlue" Width="150" Height="90"></Rectangle>
+                    <Rectangle Fill="LightBlue" Width="150" Height="90"></Rectangle>
+                    -->
+                <!--<Rectangle Fill="AliceBlue" Width="150" Height="90"></Rectangle>-->
+                <!--
+                </StackPanel>-->
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock Name="tb2" Width="600" Height="50" FontStyle="Italic" FontWeight="Light" FontSize="30"></TextBlock>
+                <TextBlock Name="tb" Width="600" Height="50" FontStyle="Italic" FontWeight="Light" FontSize="30"></TextBlock>
+            </StackPanel>
+            <Rectangle Name="mainRe" Fill="Gray" Canvas.Top="600" Canvas.Left="580" Width="370" Height="50"></Rectangle>
+            <Ellipse Name="ball" Fill="DarkGray" Height="60" Canvas.Left="735" Canvas.Top="480" Width="60" RenderTransformOrigin="0.86,0.52"/>
+        </Canvas>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button Name="Back" VerticalAlignment="Center" Click="Back_Click" Content="End" Width="150" Height="60" FontSize="35" FontStyle="Italic" Background="White" BorderBrush="Black" BorderThickness="0.5" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+        </StackPanel>
+        
+    </Grid>
+</Page>

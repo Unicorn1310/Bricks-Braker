@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="FinalProject.statistics"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="AliceBlue">
+
+    <Grid>
+        <TextBlock FontSize="70" HorizontalAlignment="Center" VerticalAlignment="Top" FontStyle="Italic" FontWeight="Light">Game statistics</TextBlock>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="40" FontStyle="Italic" FontWeight="Bold" >Highest score player:</TextBlock>
+                <TextBlock x:ConnectionId='5' Name="tb1" FontSize="40" FontStyle="Italic" FontWeight="Light"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="40" FontStyle="Italic" FontWeight="Bold">Most games played by:</TextBlock>
+                <TextBlock x:ConnectionId='4' Name="tb2" FontSize="40" FontStyle="Italic" FontWeight="Light"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="40" FontStyle="Italic" FontWeight="Bold">Least strikes player:</TextBlock>
+                <TextBlock x:ConnectionId='3' Name="tb3" FontSize="40" FontStyle="Italic" FontWeight="Light"></TextBlock>
+            </StackPanel>
+
+        </StackPanel>
+        <Button x:ConnectionId='2' Content="Back" HorizontalAlignment="Center" VerticalAlignment="Bottom" Name="Back"                     Height="80" Width="200" FontSize="30" FontStyle="Italic" Background="AliceBlue" BorderBrush="Black" BorderThickness="0.5"/>
+    </Grid>
+</Page>
+
